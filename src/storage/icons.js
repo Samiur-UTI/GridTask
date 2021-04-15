@@ -1,5 +1,5 @@
 import React from 'react'
-import DonutLargeIcon from '@material-ui/icons/DonutLarge';
+import LocalHospitalOutlinedIcon from '@material-ui/icons/LocalHospitalOutlined';
 import HomeIcon from '@material-ui/icons/Home';
 import EqualizerIcon from '@material-ui/icons/Equalizer';
 import SettingsTwoToneIcon from '@material-ui/icons/SettingsTwoTone';
@@ -9,8 +9,8 @@ export default function icons() {
     return (
      [
         {
-            component: <DonutLargeIcon/>,
-            title: null
+            component: <LocalHospitalOutlinedIcon/>,
+            title:'Excellent Healthcare'
         },
         {
             component: <HomeIcon/>,

@@ -3,11 +3,11 @@ import {Card,Typography,FormControlLabel,Checkbox,makeStyles} from "@material-ui
 import CheckCircleOutlineRoundedIcon from '@material-ui/icons/CheckCircleOutlineRounded';
 const useStyles = makeStyles((theme) => ({
     root: {
-        width:'20rem',
+        width:'25rem',
         height: '3rem',
         borderRadius:"50px 50px 50px 50px",
         justifyContent:"space-between",
-        marginLeft:'10px'
+        marginLeft:'5%'
     },
     rounderCheck: {
         float:'right',
