@@ -1,11 +1,21 @@
 import React from 'react'
-import {FormControl,TextField,FormHelperText} from "@material-ui/core";
+import {FormControl,TextField,makeStyles} from "@material-ui/core";
+const useStyles = makeStyles((theme) => ({
+    textField: {
+      marginLeft: theme.spacing(2),
+      marginRight: theme.spacing(1),
+      marginTop:theme.spacing(15),
+      width: '90ch',
+      
+    },
+  }));
+  
 export default function TextInput() {
+    const classes = useStyles();
     return (
         <div>
             <FormControl>
-                <TextField label="Website" variant="outlined" />
-                <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
+                <TextField className={classes.textField} label="Website" variant="outlined" />
             </FormControl>
         </div>
     )
