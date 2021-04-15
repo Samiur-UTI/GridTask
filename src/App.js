@@ -5,6 +5,7 @@ import {Grid,makeStyles,CssBaseline} from '@material-ui/core';
 import './App.css';
 import logo from './logo.jpg';
 import TextSelect from './components/textSelect/textSelect.component';
+import ButtonUse from './components/button/button.component';
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: '160px 60px 0',
@@ -12,6 +13,11 @@ const useStyles = makeStyles((theme) => ({
   },
   paragraph:{
     height:'25%'
+  },
+  anchor: {
+    fontWeight:'bold',
+    fontSize:'large',
+    color:'#ff8547'
   }
 }));
 function App() {
@@ -46,6 +52,12 @@ function App() {
                     </Grid>
                     <Grid item xs={12} sm={12}>
                       <TextInput props={{label:'Specialties',defaultValue: 'Website(URL)',row:2}}/>
+                    </Grid>
+                    <Grid item xs={6} sm={6}>
+                      <a className={classes.anchor} href='/' >Benefits</a>
+                    </Grid>
+                    <Grid item xs={6} sm={6}>
+                      <ButtonUse/>
                     </Grid> 
                 </Grid> 
       </div>  
