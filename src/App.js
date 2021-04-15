@@ -6,6 +6,8 @@ import './App.css';
 import logo from './logo.jpg';
 import TextSelect from './components/textSelect/textSelect.component';
 import ButtonUse from './components/button/button.component';
+import CardUse from './components/card/card.component';
+import icons from './storage/icons';
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: '160px 60px 0',
@@ -22,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 function App() {
   const classes = useStyles();
+  const items = icons();
   return (
     <React.Fragment>
        <CssBaseline />
@@ -51,14 +54,19 @@ function App() {
                       <TextInput props={{label:'Founded', defaultValue:'Enter Year'}}/>
                     </Grid>
                     <Grid item xs={12} sm={12}>
-                      <TextInput props={{label:'Specialties',defaultValue: 'Website(URL)',row:2}}/>
+                      <TextInput props={{label:'Specialties',defaultValue: 'Enter Text',row:2}}/>
                     </Grid>
                     <Grid item xs={6} sm={6}>
                       <a className={classes.anchor} href='/' >Benefits</a>
                     </Grid>
                     <Grid item xs={6} sm={6}>
                       <ButtonUse/>
-                    </Grid> 
+                    </Grid>
+                    {items.map((item) => (
+                      <Grid item xs={6} sm={4} md={4}>
+                        <CardUse item={item}/>
+                      </Grid> 
+                    ))}
                 </Grid> 
       </div>  
     </React.Fragment>
