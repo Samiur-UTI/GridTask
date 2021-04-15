@@ -4,13 +4,13 @@
 
     .cover{
         display: block;
-    }
-    .cover > .photo {
-        height: 250px;
-        width: 100%;
-    }
-    .cover > .logo {
-        position: relative;
-        margin-bottom: 20px;
+        .photo {
+            position: relative;
+            height: 250px;
+            width: 100%;
+        }
+        .logo {
+            margin-bottom: 20px;
+        }
     }
 }
