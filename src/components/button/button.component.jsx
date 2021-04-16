@@ -24,7 +24,7 @@ export default function ButtonUse() {
         <div>
             <Button className={classes.root} variant="outlined" onClick={handleOpen}>Add Benefits</Button>
             <Modal open={open} onClose={handleClose}>
-                <UseModal/>
+                <UseModal close={handleClose}/>
             </Modal>
         </div>
     )

@@ -33,7 +33,7 @@ function App() {
         <img className='logo' alt='' src={logo}/>
                 <Grid className={classes.root} container spacing={2}>
                     <Grid item xs={12} sm={12}>
-                      <TextInput props={{label:'About Company',defaultValue: 'Type in your summary ',styles:'height: 100px;',row:5}}/>
+                      <TextInput props={{label:'About Company',defaultValue: 'Type in your summary ',styles:'height: 100px',row:5}}/>
                     </Grid>
                     <Grid item xs={12} sm={6}>
                       <TextInput props={{label:'Website',defaultValue: 'Website(URL)'}}/>
@@ -63,8 +63,8 @@ function App() {
                       <ButtonUse/>
                     </Grid>
                     {items.map((item) => (
-                      <Grid item xs={12} sm={6} md={4}>
-                        <CardUse item={item}/>
+                      <Grid key={item.id} item xs={12} sm={6} md={4}>
+                        <CardUse  item={item}/>
                       </Grid> 
                     ))}
                 </Grid> 

@@ -7,7 +7,8 @@ const useStyles = makeStyles((theme) => ({
         height: '3rem',
         borderRadius:"50px 50px 50px 50px",
         justifyContent:"space-between",
-        marginLeft:'5%'
+        marginLeft:'5%',
+        marginRight:'5%'
     },
     rounderCheck: {
         float:'right',
